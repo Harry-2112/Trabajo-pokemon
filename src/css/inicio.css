@@ -1,0 +1,11 @@
+#content-cards{
+    margin: 100px auto;
+    width: 90%;
+    background: #000;
+    opacity: .7;
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    color: #fff;
+}

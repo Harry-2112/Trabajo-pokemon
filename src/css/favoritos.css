@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#content-cards{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: 20px;
+    width: 90%;
+    background: #000;
+    opacity: .7;
+}
+
+
+.card{
+    text-align: center;
+    height: 300px;
+    color: #fff;
+}
+img{
+    width: 200px;
+}

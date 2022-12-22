@@ -1,0 +1,16 @@
+###
+POST https://user-pokemon.up.railway.app/api/users/ HTTP/1.1
+Content-Type: application/json
+
+
+{
+"name": "Juan Guarnizo",
+"email": "Juan@gmail.com",
+"user": "Juan1234",
+"password": "JuanG1234",
+"favorites": {
+    "id": "3"
+}
+}
+###
+GET https://user-pokemon.up.railway.app/api/users/63a41dcf900a3ca4ea842d01 HTTP/1.1

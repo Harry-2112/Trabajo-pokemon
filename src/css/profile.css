@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+#registro{
+	text-align: center;
+	color:#fff;
+	font-size: 20px;
+	font-weight: 400;
+}
+#registro a{
+	color: #fff;
+	font-weight: 700;
+}
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: 150px auto 15px;
+	padding: 40px;
+}
+.cabecera-titulo{
+    text-align: center;
+    font-family: cursive;
+    color: #fff;
+}
+.login {
+
+	gap: 20px;
+}
+
+.login__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.login__grupo-input {
+	position: relative;
+}
+
+.login__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.login__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.login__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+	color: #fff;
+}
+
+.login__input-error-activo {
+	display: block;
+}
+
+.login__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.login__checkbox {
+	margin-right: 10px;
+}
+
+
+.login__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.login__mensaje-activo {
+	display: block;
+}
+
+.login__mensaje p {
+	margin: 0;
+}
+
+.login__grupo-btn-enviar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.btn_registro{
+	text-decoration:none;
+	color: #fff;
+}
+
+.login__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #0075FF;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.login__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.login__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.login__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.login__grupo-correcto .login__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.login__grupo-incorrecto .login__label {
+	color: #bb2929;
+}
+
+.login__grupo-incorrecto .login__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.login__grupo-incorrecto .login__input {
+	border: 3px solid #bb2929;
+}
+

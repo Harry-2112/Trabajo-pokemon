@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menù Lateral con Css</title>
+    <link rel="stylesheet" href="../../src/css/navbar.css">
+    <link rel="stylesheet" href="../../src/css/list.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Pokemania</h1>
+            </div>
+            <nav class="menu">
+                <a href="./inicio.html">Inicio</a>
+                <a href="./PokemontList.html">Pokemon List</a>
+                <a href="./profile.html">Profile</a>
+                <a href="./PokemonFavorite.html">Pokemon Favorites</a>
+                <a href="../../index.html">salir</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+
+        <div class="cont-menu">
+            <nav>
+                <a href="./inicio.html">Inicio</a>
+                <a href="./PokemontList.html">Pokemon List</a>
+                <a href="./profile.html">Profile</a>
+                <a href="./PokemonFavorite.html">Pokemon Favorites</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+
+
+    <form action="" onsubmit="searchPokemon(event)">
+        <select name="pokemon" id="pokemon"></select>
+        <input type="submit" id="btn" value="Buscar">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokemon List</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="../../img/poke-shadow.png" />
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+        <div id="pokemon-favorite">
+            <button id="btn-favorito"></button>
+        </div>
+    </div>
+
+
+    <script src="../../src/js/list.js"></script>
+    <script src="../../src/js/agregar-fav.js"></script>
+</body>
+
+</html>
