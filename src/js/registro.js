@@ -20,7 +20,8 @@ const Procesar = (event) => {
 };
 function obtenerID(param) {
 	localStorage.setItem("usuario_id", JSON.stringify(param._id));
-	window.location.href = "../templates/logeado/inicio.html";
+	window.location.href =
+		"https://harry-2112.github.io/Trabajo-pokemon/templates/logeado/inicio.html";
 }
 
 function validar() {
