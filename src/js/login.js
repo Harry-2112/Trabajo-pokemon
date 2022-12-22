@@ -43,7 +43,8 @@ function elementoValidacion(params) {
 		vadidacionusuario == validarElemet.user &&
 		validacioncontraseña == validarElemet.password
 	) {
-		window.location.href = "../../templates/logeado/inicio.html";
+		window.location.href =
+			"../../Trabajo-pokemon/templates/logeado/inicio.html";
 	} else {
 		alert("esa no es la contraseña");
 	}
